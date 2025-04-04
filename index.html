@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  <title>HelpOn - Find Local Services</title>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <nav class="nav">
+        <div class="nav_logo">
+          <a href="#" class="nav_logo">
+            <i class="fas fa-hands-helping"></i>
+            HelpOn
+          </a>
+        </div>
+        <ul class="menu_items">
+          <li><a href="./index.html" class="active">Home</a></li>
+          <li><a href="./Aboutus/index.html">About us</a></li>
+          <li><a href="http://localhost:5173/">Join us</a></li>
+          <li><a href="./SignIn/index.html" class="sign-in-btn">Sign In</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Your One-Stop Solution for Local Services</h1>
+        <p class="hero-subtitle">Connect with trusted professionals for all your needs</p>
+        
+        <div class="search-container">
+          <form class="search-box" id="searchForm">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" id="serviceInput" name="service" placeholder="What service are you looking for?" required>
+            <select class="location-select" id="locationSelect" name="location" required>
+              <option value="">Select Location</option>
+              <option value="new-york">New York</option>
+              <option value="los-angeles">Los Angeles</option>
+              <option value="chicago">Chicago</option>
+              <option value="houston">Houston</option>
+            </select>
+            <button type="submit" class="search-btn">Search</button>
+          </form>
+          
+          <div class="popular-searches">
+            <span>Popular:</span>
+            <a href="#" onclick="searchService('Plumber')">Plumber</a>
+            <a href="#" onclick="searchService('Electrician')">Electrician</a>
+            <a href="#" onclick="searchService('House Cleaning')">House Cleaning</a>
+            <a href="#" onclick="searchService('Carpenter')">Carpenter</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-services">
+      <h2>Popular Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h3>Home Repair</h3>
+          <p>Professional repair services for your home</p>
+          <a href="#" class="service-link">Find Pros <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-paint-roller"></i>
+          </div>
+          <h3>Painting</h3>
+          <p>Transform your space with expert painters</p>
+          <a href="#" class="service-link">Find Pros <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <h3>Electrical</h3>
+          <p>Licensed electricians at your service</p>
+          <a href="#" class="service-link">Find Pros <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-broom"></i>
+          </div>
+          <h3>Cleaning</h3>
+          <p>Professional cleaning services</p>
+          <a href="#" class="service-link">Find Pros <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-it-works">
+      <h2>How It Works</h2>
+      <div class="steps-container">
+        <div class="step">
+          <div class="step-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <h3>1. Search</h3>
+          <p>Find the service you need</p>
+        </div>
+        
+        <div class="step">
+          <div class="step-icon">
+            <i class="fas fa-user-check"></i>
+          </div>
+          <h3>2. Compare</h3>
+          <p>Read reviews and compare pros</p>
+        </div>
+        
+        <div class="step">
+          <div class="step-icon">
+            <i class="fas fa-calendar-check"></i>
+          </div>
+          <h3>3. Book</h3>
+          <p>Schedule your service</p>
+        </div>
+        
+        <div class="step">
+          <div class="step-icon">
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>4. Review</h3>
+          <p>Rate your experience</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="cta-content">
+        <h2>Are You a Service Provider?</h2>
+        <p>Join our network of professionals and grow your business</p>
+        <div class="cta-buttons">
+          <a href="http://localhost:5173/" class="cta-button primary">Join as Pro</a>
+          <a href="#" class="cta-button secondary">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Verified Professionals</h3>
+        <p>All service providers are thoroughly vetted</p>
+      </div>
+      
+      <div class="feature">
+        <i class="fas fa-clock"></i>
+        <h3>Quick Booking</h3>
+        <p>Book services in minutes, not hours</p>
+      </div>
+      
+      <div class="feature">
+        <i class="fas fa-dollar-sign"></i>
+        <h3>Best Prices</h3>
+        <p>Competitive pricing and no hidden fees</p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-top">
+          <div class="footer-logo">
+            <i class="fas fa-hands-helping"></i>
+            <span>HelpOn</span>
+          </div>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-grid">
+          <div class="footer-section">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#">Home Repair</a></li>
+              <li><a href="#">Cleaning</a></li>
+              <li><a href="#">Electrical</a></li>
+              <li><a href="#">Plumbing</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Safety</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h4>Newsletter</h4>
+            <p>Stay updated with our latest news</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Enter your email">
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 HelpOn. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Settings</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
